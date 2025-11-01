@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Najmat Al Shitaa Auto Maintenance | Professional Car Care Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            background: url('Head_Shop.png') center center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-placeholder {
+            text-align: center;
+            color: white;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        .hero-placeholder h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-placeholder p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #1a1a1a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4a9eff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #1e3c72;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2a5298;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .about-content {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        .contact-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #1e3c72;
+        }
+
+        @media (max-width: 768px) {
+            .hero-placeholder h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-placeholder">
+            <h1>Najmat Al Shitaa Auto Maintenance</h1>
+            <h3>Professional Auto Care You Can Trust</h3>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>General Maintenance</h3>
+                    <p>Comprehensive vehicle maintenance including oil changes, filter replacements, and routine inspections to keep your car running smoothly.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Engine Repair</h3>
+                    <p>Expert engine diagnostics and repair services. Our skilled technicians handle everything from minor issues to major overhauls.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛞</div>
+                    <h3>Tire Services</h3>
+                    <p>Complete tire services including rotation, balancing, alignment, and replacement with quality brands.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔋</div>
+                    <h3>Electrical Systems</h3>
+                    <p>Professional electrical system diagnostics and repairs, including battery testing, alternator service, and wiring repairs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>AC & Cooling</h3>
+                    <p>Air conditioning service and repair, cooling system maintenance, and radiator services for optimal climate control.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Brake Services</h3>
+                    <p>Complete brake system inspection, repair, and replacement to ensure your safety on the road.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Najmat Al Shitaa Auto Maintenance is your trusted partner for professional automotive care. With years of experience in the industry, we pride ourselves on delivering high-quality service and customer satisfaction.</p>
+                <p>Our team of certified technicians uses state-of-the-art equipment and genuine parts to ensure your vehicle receives the best care possible. We treat every vehicle as if it were our own.</p>
+                <p>From routine maintenance to complex repairs, we're here to keep your vehicle running at its best. Visit us today and experience the difference of professional auto care.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📍 Location</h3>
+                    <p style="margin-bottom: 10px;">Al Sajaa<br>Sharjah, UAE</p>
+                    <a href="https://maps.app.goo.gl/KYeSRM6FfoeApNuq8" target="_blank" style="color: #2a5298; text-decoration: none; font-weight: bold;">🧭 View on Google Maps</a>
+                </div>
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p style="margin-bottom: 10px;">+971 50 834 8864</p>
+                    <p style="margin-bottom: 10px;">+971 55 272 7914</p>
+                    <a href="https://wa.me/971508348864" target="_blank" style="color: #25D366; text-decoration: none; font-weight: bold;">💬 Chat on WhatsApp</a>
+                </div>
+                <div class="contact-card">
+                    <h3>⏰ Hours</h3>
+                    <p>Saturday - Thursday<br>8:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="#contact" class="cta-button">Schedule an Appointment</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025  Najmat Al Shitaa Auto Maintenance. All rights reserved.</p>
+        <p>Professional Auto Care | Quality Service | Customer Satisfaction</p>
+    </footer>
+</body>
+</html>
